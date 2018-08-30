@@ -1,0 +1,45 @@
+{% assign pagepath = page.path | split: "/" | pop | join: "/" %}
+{% if pagepath != layout.layoutid %}
+                    <div class="sidebar hidden-print">
+                        <h4><a href="{{ breadcrumbs.[-2].url }}">{{ breadcrumbs.[-2].title }}</a></h4>
+                        <ul class="nav sidenav">
+                            {% for item in site.pages %}
+                                {% assign navitempath = item.path | split: "/" | pop | join: "/" %}
+                                {% assign navpagepath = page.path | split: "/" | pop | join: "/" %}
+                                {% assign navitemdoc = item.path | split: "/" %}
+                                {% if navitempath contains navpagepath %}
+                                    {% if navitempath == navpagepath or item.path contains "index" %}
+                                        {% assign nppindex = navpagepath | append: "/index" %}
+                                        {% unless item.path contains nppindex %}
+                                        <li{% if item.path == page.path %} class="active"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                                        {% endunless %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+{% endif %}
+
+                    <div class="sidebar hidden-print" id="onthispage" style="display:none;">
+                        <h4>On this page:</h4>
+                        <ul class="nav sidenav"></ul>
+                    </div>
+
+                    <script>
+                        window.onload = function() {
+                            $("#main-content h3").each(function (index) {
+                                $("#onthispage").show();
+                                 var append = '<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a>';
+                                 var h4s = $(this).nextUntil("h3","h4");
+                                 if ( h4s.length > 0 ) {
+                                     append += '<ul>';
+                                     h4s.each(function(index) {
+                                         append += '<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>';
+                                     });
+                                     append += '</ul>';
+                                 }
+                                 append += '</li>';
+                                 $("#onthispage > ul").append(append);
+                            });
+                        };
+                    </script>

@@ -1,0 +1,11 @@
+<li class="col-sm-4 col-lg-3" property="contributor" typeof="Person">
+    <div class="panel panel-default">
+        <div class="panel-heading" property="jobTitle" typeof="Text">{{ include.title }}</div>
+        <div class="panel-body text-center">
+            <img class="person-image img-responsive" src="https://avatars1.githubusercontent.com/u/{{ include.ghid }}?v=3&s=460" alt="{{ include.name }}" property="image" typeof="ImageObject" />
+            <div class="person-name" property="name" typeof="Text">{{ include.name }}</div>
+            <div class="person-github" property="memberOf" typeof="Organization">{% if include.ghun %}<a href="https://github.com/{{ include.ghun }}" target="_new">GitHub: {{ include.ghun }}</a>{% endif %}</div>
+            <div class="person-website" property="sameAs" typeof="URL">{% if include.website %}<a href="{{ include.website }}" target="_new">Personal Website</a>{% endif %}</div>
+        </div>
+    </div>
+</li>

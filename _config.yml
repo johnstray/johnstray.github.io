@@ -1,3 +1,14 @@
-theme: jekyll-theme-cayman
 title: My Great Website
 description: This is a small introduction telling you about this awesomness
+markdown: kramdown
+highlighter: rouge
+verbose: true
+defaults:
+  - scope:
+        path: ""
+    values:
+        layout: default
+breadcrumbs:
+    root:
+        hide: false
+        image: false

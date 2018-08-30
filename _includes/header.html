@@ -1,0 +1,21 @@
+<div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainNav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/{{ layout.layoutid }}/" title="{{ layout.title }}">{{ layout.title }}</a>
+                </div>
+
+                <nav class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav">
+                        <li{% if page.url == '/' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/">Home</a></li>
+                        <li{% if page.url contains 'documentation' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/documentation/">Documentation</a></li>
+                        <li{% if page.url contains 'changelog' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/changelog.html">Changelog</a></li>
+                        <li{% if page.url contains 'the-team' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/the-team.html">The Team</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.github.com/johnstray/{{ layout.layoutid }}/"><i class="fa fa-github"></i> GitHub Project</a></li>
+                    </ul>
+                </nav>
