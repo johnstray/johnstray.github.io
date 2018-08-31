@@ -1,24 +1,18 @@
-<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-    {% for crumb in breadcrumbs %}
-        {% if forloop.first and site.breadcrumbs.root.image %}
-            <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
-                <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-                    <span class="icon" property="name"><i class="fa fa-home"></i></span>
-                    <meta property="position" content="{{ crumb.position }}" />
-                </a>
-            </li>{% continue %}
-        {% elsif forloop.last %}
-            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-                <span property="name">{{ crumb.title }}</span>
-                <meta property="position" content="{{ crumb.position }}" />
-            </li>
+{% assign crumbs = page.url | remove:'/index.html' | split:'/' %}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    {% for crumb in crumbs offset:1 %}
+        {% if forloop.last %}
+            <li class="breadcrumb-item active">{{ page.title }}</li>
         {% else %}
-            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-                <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-                    <span property="name">{{ crumb.title }}</span>
-                    <meta property="position" content="{{ crumb.position }}" />
-                </a>
-            </li>
+            {% assign crumb_limit = forloop.index | plus: 1 %}
+            {% capture crumburl %}{% for bcrumb in crumbs limit: crumb_limit %}{{ bcrumb | append:'/' }}{% endfor %}{% endcapture %}
+            {% for spage in site.pages %}
+                {% if spage.url == crumburl %}
+                    <li class="breadcrumb-item"><a href="">{{ spage.title }}</a></li>
+                {% endif %}
+            {% endfor %}
         {% endif %}
     {% endfor %}
 </ol>
+    
