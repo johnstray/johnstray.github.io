@@ -282,6 +282,10 @@ footer {
 .img-responsive {width: 100% !important;}
 #the-team .content .panel img {margin-bottom:10px;}
 #the-team .content hr {margin: 20px 0 40px;}
+#the-team .content .panel-heading {font-size:0.8em;text-align:center;}
+#the-team .content .panel .person-name {font-weight: bold;}
+#the-team .content .panel .person-github,
+#the-team .content .panel .person-website {font-size: 0.9em;min-height:18px;}
 
 
 /* jQuery Slider Script CSS */
