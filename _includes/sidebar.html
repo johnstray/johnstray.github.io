@@ -1,7 +1,14 @@
 {% assign pagepath = page.path | split: "/" | pop | join: "/" %}
 {% if pagepath != layout.layoutid %}
                     <div class="sidebar hidden-print">
-                        <h4><a href="{{ breadcrumbs.[-2].url }}">{{ breadcrumbs.[-2].title }}</a></h4>
+                        {% assign sbpageurl = page.path | split:'/' | pop %}
+                        {% capture sbpageurlc %}{{ sbpageurl | join:'/' | append:'/' | prepend:'/' }}{% endcapture %}
+                        {% for sbpage in site.pages %}
+                            {% if sbpage.url == sbpageurlc %}
+                                <h4><a href="/{{ layout.layoutid }}/documentation/">{{ sbpage.title }}</a></h4>
+                            {% endif %}
+                        {% endfor %}
+                        
                         <ul class="nav sidenav">
                             {% for item in site.pages %}
                                 {% assign navitempath = item.path | split: "/" | pop | join: "/" %}
