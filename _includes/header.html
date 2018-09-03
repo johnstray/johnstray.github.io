@@ -5,7 +5,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/{{ layout.layoutid }}/" title="{{ layout.title }}">{{ layout.title }}</a>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="navbar-brand dropdown-toggle" id="brand-{{ layout.title | slugify }}" href="#" data-toggle="dropdown">{{ layout.title }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="projects" role="menu">
+                                <li><a href="/gs-blog/"><i class="fa fa-fw fa-newspaper-o"></i> GetSimple Blog</a></li>
+                                <li><a href="/gs-users/"><i class="fa fa-fw fa-user-circle-o"></i> User Management</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
                 <nav class="collapse navbar-collapse" id="mainNav">
@@ -16,6 +24,6 @@
                         <li{% if page.url contains 'the-team' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/the-team.html">The Team</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.github.com/johnstray/{{ layout.layoutid }}/"><i class="fa fa-github"></i> GitHub Project</a></li>
+                        <li><a href="https://www.github.com/johnstray/{{ layout.layoutid }}/"><i class="fa fa-fw fa-15x fa-github"></i> GitHub<span class="hidden-sm"> Project</span></a></li>
                     </ul>
                 </nav>

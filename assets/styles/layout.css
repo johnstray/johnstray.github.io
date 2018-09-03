@@ -237,7 +237,7 @@ footer {
     .document-header h1 {
         font-size: 32px;
         line-height: 1;
-        margin-top:13px;
+        margin-top:10px;
     }
     .document-header p {
         font-size:13px;
@@ -252,6 +252,7 @@ footer {
     .content {
         padding: 1px 60px 40px 60px;
     }
+    .navbar-brand.dropdown-toggle + ul {margin-left:-15px;}
 }
 
 @media (min-width: 992px) {
@@ -265,6 +266,7 @@ footer {
     }
     .document-header p {
         font-size:18px;
+        margin-bottom: 15px;
     }
 }
 
@@ -272,9 +274,25 @@ footer {
     .document-header h1 {
         margin-top: 32px;
     }
+    .document-header p {
+        margin-bottom:32px;
+    }
+}
+@media (max-width:767px) {
+    .navbar-brand.dropdown-toggle {height:auto;padding:7.5px 30px;}
+}
+.nav.navbar-nav { margin-bottom:0 }
+.navbar-brand.dropdown-toggle + ul {right:0;}
+.navbar-nav .dropdown i.fa {margin-right:5px;}
+
+.row.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    margin-right:0;
 }
 
-.navbar-nav i.fa{margin-right:6px;}
+.fa-15x {font-size:1.5em;vertical-align:bottom;}
 #social-media img {margin-right:10px;}
 #social-media img:last-child {margin-right:0;}
 .sidebar {color:36556e;}
@@ -287,10 +305,21 @@ footer {
 #the-team .content .panel .person-github,
 #the-team .content .panel .person-website {font-size: 0.9em;min-height:18px;}
 
+.navbar-brand:before {
+    display:inline-block;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 6px;
+    width:1.28571429em;
+    text-align:center;
+}
+#brand-getsimple-blog:before {content:"\f1ea";}
+#brand-user-management:before {content:"\f2be";}
 
 /* jQuery Slider Script CSS */
-.slider {position:relative;}
-.slider img {position:absolute;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.slider {position:relative;height:100%;overflow:hidden;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.slider img {position:absolute;width:100%;}
 
 /* Pygments Highlighting Styles */
 .highlight .hll { background-color: #ffffcc }

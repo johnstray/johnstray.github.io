@@ -1,6 +1,6 @@
 ---
 title: GetSimple Blog
-description: A simple but powerful blog system for GetSimple CMS
+description: A simple and easy to use, yet powerful blog for GetSimple. With this plugin, you can create blog posts, sort posts by category, view posts in monthly archives, plus much more.
 layout: homepage-gsblog
 ---
 
