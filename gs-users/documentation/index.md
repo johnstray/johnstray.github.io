@@ -51,3 +51,6 @@ Everyone is welcome to make suggestions o how thisi plugin can be improved. You 
 ##### [Pull Request Guidelines](/gs-users/documentation/contributing.html#pull-request-guidelines)
 ##### [Issue Reporting Guidelines](/gs-users/documentation/contributing.html#issue-reporting-guidelines)
 ##### [Repository Structure Information](/gs-users/documentation/contributing.html#repository-structure)
+
+#### [GNU General Public License](/gs-users/documentation/license.html)
+The GNU General Public License is a free, copyleft license for software and other kinds of works. The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users.
