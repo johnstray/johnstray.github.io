@@ -42,3 +42,12 @@ This is a filtering function that’s used to determine if the currently logged 
 
 ##### [get_user_permission()](/gs-users/documentation/public-functions/get-user-permission.html)
 Checks the given permission agains the given user or current user and returns the result. This function is useful when you need to check if a user has permission to perform an action, such as save or delete.
+
+---
+### Project Guidelines and Information
+
+#### [Contribution Guidelines](/gs-users/documentation/contributing.html)
+Everyone is welcome to make suggestions o how thisi plugin can be improved. You can do this by either submitting an issue to report a bug or discuss a feature, or a pull-request to fix a bug or add a feature. Here you will also find the following information:
+##### [Pull Request Guidelines](/gs-users/documentation/contributing.html#pull-request-guidelines)
+##### [Issue Reporting Guidelines](/gs-users/documentation/contributing.html#issue-reporting-guidelines)
+##### [Repository Structure Information](/gs-users/documentation/contributing.html#repository-structure)
