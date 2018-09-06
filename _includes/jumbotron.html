@@ -1,0 +1,20 @@
+        <div class="document-header">
+            <div class="container">
+                <div class="row equal">
+                    <div class="col-sm-8">
+                        <h1>{{ page.title }}</h1>
+                        <p>{{ page.description }}</p>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <div class="slider">
+                            <img src="{{ page.slider1 | relative_url}}" alt="" />
+                            <img src="{{ page.slider2 | relative_url}}" alt="" />
+                            <img src="{{ page.slider3 | relative_url}}" alt="" />
+                            <img src="{{ page.slider4 | relative_url}}" alt="" />
+                            <img src="{{ page.slider5 | relative_url}}" alt="" />
+                        </div>
+                        <script>window.onload = function(){$('.slider img:gt(0)').hide();setInterval(function(){$('.slider :first-child').fadeOut().next('img').fadeIn().end().appendTo('.slider');},3000);};</script>
+                    </div>
+                </div>
+            </div>
+        </div>
