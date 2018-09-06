@@ -386,7 +386,8 @@ footer {
 
 /* Colors for Jumbotron.html */
 .lang-ruby { background-color: #701516; background-image: url('/assets/textures/bright-squares.png'); /* Dark Red */ }
-.lang-swift { background-color: #ffac45; /* Orange */ }
+.lang-swift { background-color: #ffac45; background-image: url('/assets/textures/random-grey-variations.png'); /* Orange */ }
+.lang-swift p { color: #555; } .lang-swift h1 { text-shadow: 1px 1px 5px #555; }
 .lang-javascript { background-color: #f1e05a; /* Yellow */ }
 .lang-csharp { background-color: #178600; /* Green */ }
 .lang-shell { background-color: #89e051; /* Bright Green */ }
