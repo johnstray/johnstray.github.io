@@ -282,7 +282,7 @@ footer {
     .navbar-brand.dropdown-toggle {height:auto;padding:7.5px 30px;}
 }
 .nav.navbar-nav { margin-bottom:0 }
-.navbar-brand.dropdown-toggle + ul {right:0;}
+/* .navbar-brand.dropdown-toggle + ul {right:0;} */
 .navbar-nav .dropdown i.fa {margin-right:5px;}
 
 .row.equal {
