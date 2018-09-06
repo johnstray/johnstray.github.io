@@ -11,26 +11,7 @@ title: User Management
             </div>
         </header>
         
-        <div class="document-header">
-            <div class="container">
-                <div class="row equal">
-                    <div class="col-sm-8">
-                        <h1>{{ page.title }}</h1>
-                        <p>{{ page.description }}</p>
-                    </div>
-                    <div class="col-sm-4 hidden-xs">
-                        <div class="slider">
-                            <img src="{{ "/assets/images/gs-users_slider1.png" | relative_url}}" alt="User&apos;s Administration" />
-                            <img src="{{ "/assets/images/gs-users_slider2.png" | relative_url}}" alt="User Editor" />
-                            <img src="{{ "/assets/images/gs-users_slider3.png" | relative_url}}" alt="Group Editor" />
-                            <img src="{{ "/assets/images/gs-users_slider4.png" | relative_url}}" alt="Login Page" />
-                            <img src="{{ "/assets/images/gs-users_slider5.png" | relative_url}}" alt="Settings" />
-                        </div>
-                        <script>window.onload = function(){$('.slider img:gt(0)').hide();setInterval(function(){$('.slider :first-child').fadeOut().next('img').fadeIn().end().appendTo('.slider');},3000);};</script>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include jumbotron.html %}
         
         <div class="banner hidden-print">
             <div class="container">
