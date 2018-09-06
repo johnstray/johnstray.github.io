@@ -390,13 +390,14 @@ footer {
 .lang-javascript { background-color: #f1e05a; /* Yellow */ }
 .lang-csharp { background-color: #178600; /* Green */ }
 .lang-shell { background-color: #89e051; /* Bright Green */ }
-.lang-getsimple { background-color: #415A66; /* Dark Green */ }
+.lang-getsimple { background-color: #415A66; background-image: url('/assets/textures/bright-squares.png'); /* Dark Green */ }
 .lang-python { background-color: #3572a5; /* Aqua */ }
 .lang-objc { background-color: #438eff; /* Bright Blue */ }
 .lang-php { background-color: #4f5d95; /* Blue */ }
 .lang-powershell { background-color: #012456; /* Dark Blue */ }
 .lang-html { background-color: #563d7c; /* Purple */ }
 .lang-cpp { background-color: #f34b7d; /* Pink */ }
+.lang-default { background-color: #1d365d; background-image: url('/assets/textures/gplay.png'); /* Dark Blue */ }
 
 /*
  * print styles
