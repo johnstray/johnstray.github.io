@@ -7,7 +7,11 @@
                     </button>
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a class="navbar-brand dropdown-toggle" id="brand-{{ layout.title | slugify }}" href="#" data-toggle="dropdown">{{ layout.title }} <span class="caret"></span></a>
+                            <a class="navbar-brand dropdown-toggle" id="brand-{{ layout.title | slugify }}" href="#" data-toggle="dropdown">
+                                {% if layout.title %}{{ layout.title }}
+                                {% else %}{{ page.title }}{% endif %}
+                                <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu" id="projects" role="menu">
                                 <li class="dropdown-header">GetSimple CMS Plugins</li>
                                 <li><a href="/gs-blog/"><i class="fa fa-fw fa-newspaper-o"></i> GetSimple Blog</a></li>
