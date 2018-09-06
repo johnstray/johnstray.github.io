@@ -385,12 +385,12 @@ footer {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /* Colors for Jumbotron.html */
-.lang-ruby { background-color: #701516; /* Dark Red */ }
+.lang-ruby { background-color: #701516; background-image: url('/assets/textures/bright-squares.png'); /* Dark Red */ }
 .lang-swift { background-color: #ffac45; /* Orange */ }
 .lang-javascript { background-color: #f1e05a; /* Yellow */ }
 .lang-csharp { background-color: #178600; /* Green */ }
 .lang-shell { background-color: #89e051; /* Bright Green */ }
-.lang-getsimple { background-color: #415A66; background-image: url('/assets/textures/bright-squares.png'); /* Dark Green */ }
+.lang-getsimple { background-color: #415A66; background-image: url('/assets/textures/fabric-of-squares.png'); /* Dark Green */ }
 .lang-python { background-color: #3572a5; /* Aqua */ }
 .lang-objc { background-color: #438eff; /* Bright Blue */ }
 .lang-php { background-color: #4f5d95; /* Blue */ }
