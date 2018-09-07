@@ -1,6 +1,9 @@
 ---
 title: ChangeLog
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 ### Version 3.5.0 ~ Beta
