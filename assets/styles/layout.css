@@ -388,16 +388,16 @@ footer {
 .lang-ruby { background-color: #701516; background-image: url('/assets/textures/bright-squares.png'); /* Dark Red */ }
 .lang-swift { background-color: #ffac45; background-image: url('/assets/textures/random-grey-variations.png'); /* Orange */ }
 .lang-swift p { color: #555; } .lang-swift h1 { text-shadow: 1px 1px 5px #555; }
-.lang-javascript { background-color: #f1e05a; /* Yellow */ }
-.lang-csharp { background-color: #178600; /* Green */ }
-.lang-shell { background-color: #89e051; /* Bright Green */ }
+.lang-javascript { background-color: #f1e05a; background-image: url('/assets/textures/arabesque.png /* Yellow */ }
+.lang-csharp { background-color: #178600; background-image: url('/assets/textures/light-wool.png'); /* Green */ }
+.lang-shell { background-color: #89e051; background-image: url('/assets/textures/smooth-wall-dark.png'); /* Bright Green */ }
 .lang-getsimple { background-color: #415A66; background-image: url('/assets/textures/fabric-of-squares.png'); /* Dark Green */ }
-.lang-python { background-color: #3572a5; /* Aqua */ }
-.lang-objc { background-color: #438eff; /* Bright Blue */ }
-.lang-php { background-color: #4f5d95; /* Blue */ }
-.lang-powershell { background-color: #012456; /* Dark Blue */ }
-.lang-html { background-color: #563d7c; /* Purple */ }
-.lang-cpp { background-color: #f34b7d; /* Pink */ }
+.lang-python { background-color: #3572a5; background-image: url('/assets/textures/subtle-white-feathers.png'); /* Aqua */ }
+.lang-objc { background-color: #438eff; background-image: url('/assets/textures/triangles.png'); /* Bright Blue */ }
+.lang-php { background-color: #4f5d95; background-image: url('/assets/textures/xv.png'); /* Blue */ }
+.lang-powershell { background-color: #012456; background-image: url('/assets/textures/skulls.png'); /* Dark Blue */ }
+.lang-html { background-color: #563d7c; background-image: url('/assets/textures/swirl.png /* Purple */ }
+.lang-cpp { background-color: #f34b7d; background-image: url('/assets/textures/subtle-grey.png'); /* Pink */ }
 .lang-default { background-color: #1d365d; background-image: url('/assets/textures/gplay.png'); /* Dark Blue */ }
 
 /*
