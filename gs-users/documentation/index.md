@@ -1,6 +1,9 @@
 ---
 title: Documentation
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 
 #### [Installation and Configuration](/gs-users/documentation/installation-configuration.html)
