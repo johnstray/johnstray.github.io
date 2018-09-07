@@ -8,11 +8,11 @@
                     <div class="col-sm-4 hidden-xs">
                         {% if page.slider1 %}
                         <div class="slider">
-                            <img src="{{ page.slider1 | relative_url}}" alt="" />
-                            <img src="{{ page.slider2 | relative_url}}" alt="" />
-                            <img src="{{ page.slider3 | relative_url}}" alt="" />
-                            <img src="{{ page.slider4 | relative_url}}" alt="" />
-                            <img src="{{ page.slider5 | relative_url}}" alt="" />
+                            {% if page.slider1 %}<img src="{{ page.slider1 | relative_url}}" alt="" />{% endif %}
+                            {% if page.slider2 %}<img src="{{ page.slider2 | relative_url}}" alt="" />{% endif %}
+                            {% if page.slider3 %}<img src="{{ page.slider3 | relative_url}}" alt="" />{% endif %}
+                            {% if page.slider4 %}<img src="{{ page.slider4 | relative_url}}" alt="" />{% endif %}
+                            {% if page.slider5 %}<img src="{{ page.slider5 | relative_url}}" alt="" />{% endif %}
                         </div>
                         <script>window.onload = function(){$('.slider img:gt(0)').hide();setInterval(function(){$('.slider :first-child').fadeOut().next('img').fadeIn().end().appendTo('.slider');},3000);};</script>
                         {% endif %}
