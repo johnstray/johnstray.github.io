@@ -3,7 +3,7 @@ title: Managing Users & Groups
 project: User Management
 projectid: gs-users
 lang: getsimple
-layout: default-gsusers
+layout: default
 ---
 
 ### Managing Users
