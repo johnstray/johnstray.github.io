@@ -1,6 +1,9 @@
 ---
 title: Integrating Your Plugin
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 
 Integrating your plugin with the User Management system is a two step process. The first is to create your permissions array and add it to the system; the second is to check permissions before showing any content on your plugins admin page.
