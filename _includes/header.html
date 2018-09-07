@@ -7,7 +7,7 @@
                     </button>
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a class="navbar-brand dropdown-toggle" id="brand-{{ layout.title | slugify }}" href="#" data-toggle="dropdown">{{ layout.title }}<span class="caret"></span></a>
+                            <a class="navbar-brand dropdown-toggle" id="brand-{{ page.project | slugify }}" href="#" data-toggle="dropdown">{{ page.project }}<span class="caret"></span></a>
                             <ul class="dropdown-menu" id="projects" role="menu">
                                 <li class="dropdown-header">GetSimple CMS Plugins</li>
                                 <li><a href="/gs-blog/"><i class="fa fa-fw fa-newspaper-o"></i> GetSimple Blog</a></li>
@@ -21,12 +21,12 @@
 
                 <nav class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
-                        <li{% if page.url == '/' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/">Home</a></li>
-                        <li{% if page.url contains 'documentation' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/documentation/">Documentation</a></li>
-                        <li{% if page.url contains 'changelog' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/changelog.html">Changelog</a></li>
-                        <li{% if page.url contains 'the-team' %} class="active"{% endif %}><a href="/{{ layout.layoutid }}/the-team.html">The Team</a></li>
+                        <li{% if page.url == '/' %} class="active"{% endif %}><a href="/{{ page.projectid }}/">Home</a></li>
+                        <li{% if page.url contains 'documentation' %} class="active"{% endif %}><a href="/{{ page.projectid }}/documentation/">Documentation</a></li>
+                        <li{% if page.url contains 'changelog' %} class="active"{% endif %}><a href="/{{ page.projectid }}/changelog.html">Changelog</a></li>
+                        <li{% if page.url contains 'the-team' %} class="active"{% endif %}><a href="/{{ page.projectid }}/the-team.html">The Team</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.github.com/johnstray/{{ layout.layoutid }}/"><i class="fa fa-fw fa-15x fa-github"></i> GitHub<span class="hidden-sm"> Project</span></a></li>
+                        <li><a href="https://www.github.com/johnstray/{{ page.projectid }}/"><i class="fa fa-fw fa-15x fa-github"></i> GitHub<span class="hidden-sm"> Project</span></a></li>
                     </ul>
                 </nav>
