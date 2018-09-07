@@ -1,6 +1,9 @@
 ---
 title: RSS Auto-Importer
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 RSS Auto-Importer
