@@ -1,6 +1,9 @@
 ---
 title: Contributing Guidelines
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 Everyone is welcome to make suggestions o how thisi plugin can be improved. You can do this by either submitting an issue to report a bug or discuss a feature, or a pull-request to fix a bug or add a feature.
 
