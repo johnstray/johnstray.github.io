@@ -1,6 +1,9 @@
 ---
 title: Managing Posts
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 ### Post Management
