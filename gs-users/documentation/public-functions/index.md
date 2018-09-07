@@ -1,6 +1,9 @@
 ---
 title: Public Functions
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 
 #### add_permissions()
