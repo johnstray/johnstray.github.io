@@ -1,6 +1,9 @@
 ---
 title: Settings Configuration
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 ### Main Settings
