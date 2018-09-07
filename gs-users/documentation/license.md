@@ -1,6 +1,9 @@
 ---
 title: GNU General Public License
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 **GNU GENERAL PUBLIC LICENSE**  
 Version 3, 29 June 2007
