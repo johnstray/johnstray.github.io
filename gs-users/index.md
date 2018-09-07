@@ -6,10 +6,9 @@ projectid: gs-users
 layout: homepage
 lang: getsimple
 slider1: /assets/images/gs-users_slider1.png
-slider2: /assets/images/gs-users_slider3.png
+slider2: /assets/images/gs-users_slider2.png
 slider3: /assets/images/gs-users_slider3.png
 slider4: /assets/images/gs-users_slider4.png
-slider5: /assets/images/gs-users_slider5.png
 ---
 
 ## User Management for GetSimple CMS
