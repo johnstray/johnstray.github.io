@@ -284,6 +284,8 @@ footer {
 .nav.navbar-nav { margin-bottom:0 }
 /* .navbar-brand.dropdown-toggle + ul {right:0;} */
 .navbar-nav .dropdown i.fa {margin-right:5px;}
+.dropdown-header {margin-top: 10px;}
+.dropdown-header:first-child {margin-top:0;}
 
 .row.equal {
     display: flex;
