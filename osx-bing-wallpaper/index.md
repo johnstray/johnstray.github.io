@@ -5,6 +5,10 @@ project: Bing Wallpaper Changer
 projectid: osx-bing-wallpaper
 layout: homepage-osxbwc
 lang: swift
+slider1: /assets/slides/osxbwc-slide1.png
+slider2: /assets/slides/osxbwc-slide2.png
+slider3: /assets/slides/osxbwc-slide3.png
+slider4: /assets/slides/osxbwc-slide4.png
 ---
 
 Inspired by the like named application created by Gary Hughes (overtThere.co.uk). Written from the ground up specifically for the macOS platform.
