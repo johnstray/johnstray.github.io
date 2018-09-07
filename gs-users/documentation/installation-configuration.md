@@ -1,6 +1,9 @@
 ---
 title: Installation and Configuration
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 
 ### Minimum Requirements
