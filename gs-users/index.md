@@ -1,7 +1,9 @@
 ---
 title: User Management
 description: An advanced user management system for GetSimple CMS. This great plugin has a never-before-seen groups management feature, and the ability for an unlimited number of integrated plugins.
-layout: homepage-gsusers
+project: User Management
+projectid: gs-users
+layout: homepage
 lang: getsimple
 slider1: /assets/images/gs-users_slider1.png
 slider2: /assets/images/gs-users_slider3.png
