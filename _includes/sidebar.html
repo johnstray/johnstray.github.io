@@ -1,11 +1,11 @@
 {% assign pagepath = page.path | split: "/" | pop | join: "/" %}
-{% if pagepath != layout.layoutid %}
+{% if pagepath != page.projectid %}
                     <div class="sidebar hidden-print">
                         {% assign sbpageurl = page.path | split:'/' | pop %}
                         {% capture sbpageurlc %}{{ sbpageurl | join:'/' | append:'/' | prepend:'/' }}{% endcapture %}
                         {% for sbpage in site.pages %}
                             {% if sbpage.url == sbpageurlc %}
-                                <h4><a href="/{{ layout.layoutid }}/documentation/">{{ sbpage.title }}</a></h4>
+                                <h4><a href="/{{ page.projectid }}/documentation/">{{ sbpage.title }}</a></h4>
                             {% endif %}
                         {% endfor %}
                         
