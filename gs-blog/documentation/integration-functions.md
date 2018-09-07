@@ -1,6 +1,9 @@
 ---
 title: Integration Functions
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 ### Front End Display Functions
