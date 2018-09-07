@@ -1,6 +1,9 @@
 ---
 title: Layout Templates
-layout: default-gsblog
+project: GetSimple Blog
+projectid: gs-blog
+lang: getsimple
+layout: default
 ---
 
 Layout Templates
