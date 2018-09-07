@@ -1,6 +1,8 @@
 ---
 title: Bing Wallpaper Changer for macOS
 description: Inspired by the like named application created by Gary Hughes, written from the ground up specifically for macOS.
+project: Bing Wallpaper Changer
+projectid: osx-bing-wallpaper
 layout: homepage-osxbwc
 lang: swift
 ---
