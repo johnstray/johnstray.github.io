@@ -316,6 +316,8 @@ footer {
 }
 #brand-getsimple-blog:before {content:"\f1ea";}
 #brand-user-management:before {content:"\f2be";}
+#brand-bing-wallpaper-changer {content:"\f03e";}
+#brand-plex-importer {content:"\f019";}
 
 /* jQuery Slider Script CSS */
 .slider {position:relative;height:100%;overflow:hidden;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
