@@ -1,7 +1,7 @@
 {% include head.html %}
     <body id="{{ page.title | slugify }}">
         
-        <header class="navbar navbar-fixed-top navbar-default">
+        <header class="navbar navbar-fixed-top navbar-default{% if page.lang %} lang-{{ page.lang }}{% endif %}">
             <div class="container">
                 {% include header.html %}
             </div>
