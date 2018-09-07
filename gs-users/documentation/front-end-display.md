@@ -1,6 +1,9 @@
 ---
 title: Front-End Display Functions
-layout: default-gsusers
+project: User Management
+projectid: gs-users
+lang: getsimple
+layout: default
 ---
 
 ### Profile Templates
